@@ -1,0 +1,119 @@
+/* Dashboard.css */
+
+/* Estilos gerais */
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container do Dashboard */
+.dashboard-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: all 0.3s ease;
+    color: #f1f1f1;
+}
+
+/* Título */
+.dashboard-title {
+    font-size: 28px;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* Parágrafos de informações */
+.dashboard-info {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+/* Estilo para a chave de informação (ex: IP, cidade) */
+.dashboard-info span {
+    font-weight: bold;
+    color: #4CAF50; /* Verde para destaque */
+}
+
+/* Estilo do botão de logout */
+.logout-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #f44336; /* Cor de destaque vermelha */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f; /* Cor mais escura no hover */
+    transform: translateY(-2px);
+}
+
+.logout-button:active {
+    background-color: #c62828; /* Cor mais escura quando pressionado */
+    transform: translateY(0);
+}
+
+/* Estilos para o estado de loading */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.loading-text {
+    animation: fadeInOut 1.5s infinite;
+    font-size: 24px;
+}
+
+/* Animação de fade-in e fade-out */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Ajustes para tela pequena */
+@media (max-width: 500px) {
+    .dashboard-container {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .dashboard-title {
+        font-size: 24px;
+    }
+
+    .dashboard-info {
+        font-size: 14px;
+    }
+
+    .logout-button {
+        font-size: 14px;
+    }
+}

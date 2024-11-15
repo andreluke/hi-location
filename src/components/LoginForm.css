@@ -1,0 +1,117 @@
+/* LoginForm.css */
+
+/* Fundo escuro geral */
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1e1e1e; /* Fundo escuro para o formulário */
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: 150px;
+}
+
+/* Título */
+.title {
+    font-size: 28px;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Grupo de campos (inputs) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos dos campos de input */
+.input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background-color: #333; /* Fundo escuro para os campos */
+    border: 1px solid #444; /* Borda de contraste suave */
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #4CAF50; /* Cor de borda quando o campo está em foco */
+    background-color: #444; /* Leve mudança de fundo para foco */
+}
+
+/* Estilo para os campos com erro */
+.input.error {
+    border-color: #f44336; /* Borda vermelha quando há erro */
+    background-color: #3e3e3e; /* Fundo mais claro no erro */
+}
+
+/* Mensagem de erro */
+.error-text {
+    color: #f44336; /* Vermelho mais forte para o texto de erro */
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.loading{
+    align-self: center;
+}
+
+/* Estilo do botão */
+.button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Cor do botão em verde */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #45a049; /* Cor mais escura no hover */
+    transform: translateY(-2px); /* Efeito de elevação no hover */
+}
+
+.button:active {
+    background-color: #388e3c; /* Cor mais escura quando pressionado */
+    transform: translateY(0);
+}
+
+/* Ajustes para tela pequena */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .input {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+}
